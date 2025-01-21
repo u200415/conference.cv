@@ -1,0 +1,351 @@
+h4 {
+    text-align: left;
+    font-family: "Inconsolata Regular";
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 180px;
+    display: block;
+}
+
+small {
+    font-family: "Inconsolata Regular";
+    font-weight: lighter;
+    font-size: smaller;
+    color: #ccc;
+    padding: 5px;
+
+}
+
+
+span {
+    color: lightgray;
+    font-family: "Inconsolata Regular";
+    font-size: 16px;
+    font-weight: lighter;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inconsolata Bold';
+    src: url('fonts/static/Inconsolata-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Inconsolata ExtraBold';
+    src: url('fonts/static/Inconsolata-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Inconsolata Regular';
+    src: url('fonts/static/Inconsolata-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Inconsolata Medium';
+    src: url('fonts/static/Inconsolata-Medium.ttf') format("truetype");
+}
+
+.error-1 {
+    text-align: left;
+    color: #ff3b30;
+    display: block;
+}
+
+.center-text {
+    position: absolute;
+    font-size: 45px;
+    font-family: "Inconsolata ExtraBold";
+    font-weight: bolder;
+    color: #fff;
+    z-index: 5;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 12%;
+
+
+}
+
+/* .center-text {
+    position: absolute;
+    font-size: 45px;
+    font-family: "Inconsolata ExtraBold";
+    font-weight: bolder;
+    color: #fff;
+    z-index: 5;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 12%;
+} */
+
+
+
+.para {
+    position: absolute;
+    font-size: large;
+    font-family: "Inconsolata Regular";
+    text-align: center;
+    left: 50%;
+    top: 20%;
+    z-index: 5;
+    color: lightgray;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.center-div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    left: 50%;
+    top: 85%;
+    z-index: 5;
+    background: transparent;
+    padding: 40px;
+
+
+}
+
+
+
+.upl {
+    display: block;
+    margin-top: 10px;
+    height: 56px;
+    width: 56px;
+}
+
+.upload-box {
+    width: 500px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    cursor: pointer;
+    flex-direction: column;
+
+}
+
+.upload-box input[type="file"] {
+    display: none;
+}
+
+.upload-box label span {
+    margin-top: 20px;
+}
+
+.upload-box input[type="file"]:valid+label span {
+    color: ghostwhite;
+}
+
+.upload-box label {
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.info {
+    display: flex;
+    margin-bottom: 8%;
+}
+
+.icon-info {
+    padding: 5px;
+}
+
+.label-3 {
+    color: #fff;
+    font-family: "Inconsolata Regular";
+    font-size: large;
+    margin-bottom: 6px;
+    display: block;
+    text-align: left;
+}
+
+.bg-colored {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 100%;
+    border-radius: 9px;
+    color: #fff;
+}
+
+.grey-container {
+    margin-bottom: 20px;
+}
+
+.sub-btn {
+    width: 100%;
+    display: block;
+    background-color: coral;
+    font-family: "Inconsolata Regular";
+    font-size: large;
+    font-weight: bold;
+    color: midnightblue;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.sub-btn:hover {
+    background-color: #ff3b30;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.bg-cover {
+    position: relative;
+    height: 1300px;
+    overflow: hidden;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1300px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.logo-full {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5%;
+}
+
+.pattern-lines {
+    position: absolute;
+    z-index: 1;
+}
+
+.pattern-squiggly-line-top {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    z-index: 2;
+
+}
+
+.pattern-circle {
+    position: absolute;
+    bottom: 40%;
+    right: 17%;
+    z-index: 1;
+}
+
+.pattern-squiggly-line-bottom {
+    position: absolute;
+    bottom: 0;
+    left: -3%;
+    z-index: 1;
+    transform: rotate(-15deg);
+    width: 1000px;
+}
+
+
+.upload-image {
+
+    display: block;
+    text-align: left;
+    color: red;
+}
+
+@media(max-width: 768px) {
+    .center-div {
+        padding: 20px;
+    }
+
+    .center-text {
+        font-size: 30px;
+
+        /* Reduce font size for mobile */
+        max-width: 400px;
+        /* Constrain width to force wrapping */
+        margin: 0 auto;
+        /* Center align the text horizontally */
+        word-wrap: break-word;
+        /* Break long words if necessary */
+
+
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    .pattern-squiggly-line-top {
+        position: absolute;
+        top: 7%;
+        right: 0;
+        z-index: 2;
+        width: 200px;
+    }
+
+    .pattern-squiggly-line-bottom {
+        position: absolute;
+        bottom: 0;
+        left: -3%;
+        z-index: 1;
+        transform: rotate(-15deg);
+        width: 500px;
+    }
+
+    .upload-box {
+        width: 295px;
+        height: 120px;
+        border-radius: 10px;
+        border: 2px dashed #ccc;
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        cursor: pointer;
+        flex-direction: column;
+
+    }
+
+    .bg-colored {
+        background-color: transparent;
+        border: 1px solid #ccc;
+        padding: 12px;
+        width: 90%;
+        border-radius: 9px;
+        color: #fff;
+    }
+
+    span {
+        color: lightgray;
+        font-family: "Inconsolata Regular";
+        font-size: small;
+        font-weight: lighter;
+
+    }
+
+    small {
+        font-family: "Inconsolata Regular";
+        font-weight: lighter;
+        font-size: x-small;
+        color: #ccc;
+        padding: 5px;
+
+    }
+}

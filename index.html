@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title and favicon -->
+    <title>Conference Tickets</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="32x32" href="images/favicon-32x32.png" />
+
+    <!-- External JavaScript and fonts -->
+    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="fonts/Inconsolata-VariableFont_wdth,wght.ttf"
+    />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-Bold.ttf" />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-ExtraBold.ttf" />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-Medium.ttf" />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-Regular.ttf" />
+  </head>
+  <body>
+    <section>
+      <main>
+        <!-- Background and decorative elements -->
+        <div class="bg-cover">
+          <img class="bg-img" src="./images/background-desktop.png" alt="" />
+          <img class="logo-full" src="./images/logo-full.svg" alt="" />
+          <img class="pattern-lines" src="./images/pattern-lines.svg" alt="" />
+          <img
+            class="pattern-squiggly-line-top"
+            src="./images/pattern-squiggly-line-top.svg"
+            alt=""
+          />
+          <img
+            class="pattern-circle"
+            src="./images/pattern-circle.svg"
+            alt=""
+          />
+          <img
+            class="pattern-squiggly-line-bottom"
+            src="./images/pattern-squiggly-line-bottom.svg"
+            alt=""
+          />
+
+          <!-- Main headline text -->
+          <h1 class="center-text">
+            Your Journey to Coding Conf 2025 Starts Here!
+          </h1>
+          <p class="para">
+            Secure your spot at next year's biggest coding conference
+          </p>
+        </div>
+
+        <!-- Ticket generation form -->
+        <div class="center-div">
+          <h4>Upload Avatar</h4>
+          <form onsubmit="return Validate()" action="Validation.html">
+            <!-- File upload section -->
+            <div class="upload-box">
+              <input type="file" id="upload" accept="image" />
+              <img
+                class="upl"
+                src="./images/icon-upload.svg"
+                alt="upload icon"
+                draggable="true"
+              />
+              <label for="image-upload">
+                <span>Drag and Drop or Click to upload</span></label
+              >
+            </div>
+
+            <!-- Upload guidelines -->
+            <div class="info">
+              <img class="icon-info" src="./images/icon-info.svg" alt="" />
+              <small>Upload your photo (JPG or PNG, max size: 500kb)</small>
+              <small class="upload-image" id="img-error"></small>
+            </div>
+
+            <!-- Input for full name -->
+            <div class="grey-container">
+              <label class="label-3" for="name">Full Name</label>
+              <input class="bg-colored" type="text" id="name" name="name" />
+              <small class="error-1" id="name-error"></small>
+            </div>
+
+            <!-- Input for email address -->
+            <div class="grey-container">
+              <label class="label-3" for="email">Email Address</label>
+              <input
+                class="bg-colored"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="sample@gmail.com"
+              />
+              <small class="error-1" id="email-error"></small>
+            </div>
+
+            <!-- Input for GitHub username -->
+            <div class="grey-container">
+              <label class="label-3" for="username">Github Username</label>
+              <input
+                class="bg-colored"
+                id="username"
+                name="username"
+                type="text"
+                placeholder="@username"
+              />
+              <small class="error-1" id="username-error"></small>
+            </div>
+
+            <!-- Submit button -->
+            <button id="btn" class="sub-btn" type="submit">
+              Generate my Ticket
+            </button>
+          </form>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
